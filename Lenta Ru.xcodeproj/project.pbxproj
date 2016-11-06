@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		939080FA1DCCA8D10053112D /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939080F91DCCA8D10053112D /* NewsTableViewController.swift */; };
+		939080FF1DCF666D0053112D /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939080FE1DCF666D0053112D /* News.swift */; };
+		939081021DCF66AA0053112D /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939081001DCF66AA0053112D /* NewsTableViewController.swift */; };
+		939081081DCF67890053112D /* ServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939081071DCF67890053112D /* ServiceViewController.swift */; };
 		93AD01421DA5887B007AD916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD01411DA5887B007AD916 /* AppDelegate.swift */; };
-		93AD01441DA5887B007AD916 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD01431DA5887B007AD916 /* ViewController.swift */; };
 		93AD01471DA5887B007AD916 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93AD01451DA5887B007AD916 /* Main.storyboard */; };
 		93AD01491DA5887B007AD916 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93AD01481DA5887B007AD916 /* Assets.xcassets */; };
 		93AD014C1DA5887B007AD916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93AD014A1DA5887B007AD916 /* LaunchScreen.storyboard */; };
 		93AD01571DA5887B007AD916 /* Lenta_RuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD01561DA5887B007AD916 /* Lenta_RuTests.swift */; };
 		93AD01621DA5887B007AD916 /* Lenta_RuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD01611DA5887B007AD916 /* Lenta_RuUITests.swift */; };
-		93AD01701DA67607007AD916 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD016F1DA67607007AD916 /* News.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		939080F91DCCA8D10053112D /* NewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		939080FE1DCF666D0053112D /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = News.swift; path = Model/News.swift; sourceTree = "<group>"; };
+		939081001DCF66AA0053112D /* NewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsTableViewController.swift; path = Controller/NewsTableViewController.swift; sourceTree = "<group>"; };
+		939081071DCF67890053112D /* ServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceViewController.swift; path = Api/ServiceViewController.swift; sourceTree = "<group>"; };
 		93AD013E1DA5887B007AD916 /* Lenta Ru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lenta Ru.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93AD01411DA5887B007AD916 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		93AD01431DA5887B007AD916 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		93AD01461DA5887B007AD916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93AD01481DA5887B007AD916 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93AD014B1DA5887B007AD916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,7 +51,6 @@
 		93AD015D1DA5887B007AD916 /* Lenta RuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lenta RuUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93AD01611DA5887B007AD916 /* Lenta_RuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lenta_RuUITests.swift; sourceTree = "<group>"; };
 		93AD01631DA5887B007AD916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93AD016F1DA67607007AD916 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +78,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		939080FB1DCF651A0053112D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				939080FE1DCF666D0053112D /* News.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		939080FC1DCF65250053112D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		939080FD1DCF65340053112D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				939081001DCF66AA0053112D /* NewsTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		939081061DCF673A0053112D /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				939081071DCF67890053112D /* ServiceViewController.swift */,
+			);
+			name = Api;
+			sourceTree = "<group>";
+		};
 		93AD01351DA5887B007AD916 = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +132,11 @@
 		93AD01401DA5887B007AD916 /* Lenta Ru */ = {
 			isa = PBXGroup;
 			children = (
+				939080FD1DCF65340053112D /* Controller */,
+				939080FC1DCF65250053112D /* View */,
+				939080FB1DCF651A0053112D /* Model */,
+				939081061DCF673A0053112D /* Api */,
 				93AD01411DA5887B007AD916 /* AppDelegate.swift */,
-				93AD01431DA5887B007AD916 /* ViewController.swift */,
-				939080F91DCCA8D10053112D /* NewsTableViewController.swift */,
-				93AD016F1DA67607007AD916 /* News.swift */,
 				93AD01451DA5887B007AD916 /* Main.storyboard */,
 				93AD01481DA5887B007AD916 /* Assets.xcassets */,
 				93AD014A1DA5887B007AD916 /* LaunchScreen.storyboard */,
@@ -193,7 +225,7 @@
 		93AD01361DA5887B007AD916 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Pavel Salkevich";
 				TargetAttributes = {
 					93AD013D1DA5887B007AD916 = {
@@ -267,10 +299,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				939080FA1DCCA8D10053112D /* NewsTableViewController.swift in Sources */,
-				93AD01701DA67607007AD916 /* News.swift in Sources */,
-				93AD01441DA5887B007AD916 /* ViewController.swift in Sources */,
+				939080FF1DCF666D0053112D /* News.swift in Sources */,
 				93AD01421DA5887B007AD916 /* AppDelegate.swift in Sources */,
+				939081081DCF67890053112D /* ServiceViewController.swift in Sources */,
+				939081021DCF66AA0053112D /* NewsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,8 +370,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -382,8 +416,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -402,6 +438,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
