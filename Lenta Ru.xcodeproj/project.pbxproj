@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		939080FA1DCCA8D10053112D /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939080F91DCCA8D10053112D /* NewsTableViewController.swift */; };
 		93AD01421DA5887B007AD916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD01411DA5887B007AD916 /* AppDelegate.swift */; };
 		93AD01441DA5887B007AD916 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD01431DA5887B007AD916 /* ViewController.swift */; };
 		93AD01471DA5887B007AD916 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93AD01451DA5887B007AD916 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		93AD014C1DA5887B007AD916 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93AD014A1DA5887B007AD916 /* LaunchScreen.storyboard */; };
 		93AD01571DA5887B007AD916 /* Lenta_RuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD01561DA5887B007AD916 /* Lenta_RuTests.swift */; };
 		93AD01621DA5887B007AD916 /* Lenta_RuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD01611DA5887B007AD916 /* Lenta_RuUITests.swift */; };
+		93AD01701DA67607007AD916 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD016F1DA67607007AD916 /* News.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		939080F91DCCA8D10053112D /* NewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
 		93AD013E1DA5887B007AD916 /* Lenta Ru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lenta Ru.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93AD01411DA5887B007AD916 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93AD01431DA5887B007AD916 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		93AD015D1DA5887B007AD916 /* Lenta RuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lenta RuUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93AD01611DA5887B007AD916 /* Lenta_RuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lenta_RuUITests.swift; sourceTree = "<group>"; };
 		93AD01631DA5887B007AD916 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93AD016F1DA67607007AD916 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				93AD01411DA5887B007AD916 /* AppDelegate.swift */,
 				93AD01431DA5887B007AD916 /* ViewController.swift */,
+				939080F91DCCA8D10053112D /* NewsTableViewController.swift */,
+				93AD016F1DA67607007AD916 /* News.swift */,
 				93AD01451DA5887B007AD916 /* Main.storyboard */,
 				93AD01481DA5887B007AD916 /* Assets.xcassets */,
 				93AD014A1DA5887B007AD916 /* LaunchScreen.storyboard */,
@@ -193,15 +199,18 @@
 					93AD013D1DA5887B007AD916 = {
 						CreatedOnToolsVersion = 7.0.1;
 						DevelopmentTeam = CRER8Z8H24;
+						LastSwiftMigration = 0810;
 					};
 					93AD01511DA5887B007AD916 = {
 						CreatedOnToolsVersion = 7.0.1;
 						DevelopmentTeam = CRER8Z8H24;
+						LastSwiftMigration = 0810;
 						TestTargetID = 93AD013D1DA5887B007AD916;
 					};
 					93AD015C1DA5887B007AD916 = {
 						CreatedOnToolsVersion = 7.0.1;
 						DevelopmentTeam = CRER8Z8H24;
+						LastSwiftMigration = 0810;
 						TestTargetID = 93AD013D1DA5887B007AD916;
 					};
 				};
@@ -258,6 +267,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				939080FA1DCCA8D10053112D /* NewsTableViewController.swift in Sources */,
+				93AD01701DA67607007AD916 /* News.swift in Sources */,
 				93AD01441DA5887B007AD916 /* ViewController.swift in Sources */,
 				93AD01421DA5887B007AD916 /* AppDelegate.swift in Sources */,
 			);
@@ -403,6 +414,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appriory.Lenta-Ru";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -414,6 +426,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appriory.Lenta-Ru";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -425,6 +438,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appriory.Lenta-RuTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lenta Ru.app/Lenta Ru";
 			};
 			name = Debug;
@@ -437,6 +451,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appriory.Lenta-RuTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lenta Ru.app/Lenta Ru";
 			};
 			name = Release;
@@ -448,6 +463,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appriory.Lenta-RuUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Lenta Ru";
 				USES_XCTRUNNER = YES;
 			};
@@ -460,6 +476,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appriory.Lenta-RuUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Lenta Ru";
 				USES_XCTRUNNER = YES;
 			};
@@ -484,6 +501,7 @@
 				93AD01681DA5887B007AD916 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		93AD01691DA5887B007AD916 /* Build configuration list for PBXNativeTarget "Lenta RuTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +510,7 @@
 				93AD016B1DA5887B007AD916 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		93AD016C1DA5887B007AD916 /* Build configuration list for PBXNativeTarget "Lenta RuUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +519,7 @@
 				93AD016E1DA5887B007AD916 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
